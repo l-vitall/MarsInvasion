@@ -1,3 +1,5 @@
+!!NOTE: currently solution has an issue. As I just understood, 'x-coordinate followed by y-coordinate' actually means that first coordinate is a column number (x) and the second is a row number. Domn 'followerd' word, now it is treated vice versa. Will fix it today.
+
 #Design:
 Main entities:
  - MarsSurface
