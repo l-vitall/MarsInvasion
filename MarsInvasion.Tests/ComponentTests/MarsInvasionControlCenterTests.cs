@@ -13,6 +13,8 @@ namespace MarsInvasion.Tests.ComponentTests
         [TestCase(5, 3, 1, 1, SurfaceDirection.Right, "RFRFRFRF", 1, 1, SurfaceDirection.Right, false)]
         [TestCase(5, 3, 3, 2, SurfaceDirection.Up, "FRRFLLFFRRFLL", 4, 2, SurfaceDirection.Up, false)]
         [TestCase(5, 3, 0, 3, SurfaceDirection.Left, "LLFFFLFLFL", 0, 4, SurfaceDirection.Right, true)]
+        [TestCase(5, 3, 2, 3, SurfaceDirection.Up, "FRRFLLFFRRFLL", 3, 3, SurfaceDirection.Up, false)]
+        [TestCase(5, 3, 3, 0, SurfaceDirection.Left, "LLFFFLFLFL", 4, 2, SurfaceDirection.Down, false)]
         public void Robot_Moves_As_Expected(int surfaceRowsCount, int surfaceColumnsCount, int robotPositionRow, int robotPositionColumn, SurfaceDirection surfaceDirection,
             string commandsString, int expectedPositionRow, int expectedPositionColumn, SurfaceDirection expectedDirection, bool expectedIsLost)
         {
